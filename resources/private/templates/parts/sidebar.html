@@ -22,28 +22,35 @@
   </div><!-- panel-body -->
   </div><!-- panel -->
 
-  <div class="block calendar_list panel panel-default shared_calendars " id="shared_calendar_list">
-  <div class="panel-heading">
-    <h3 class="panel-title">{% trans %}labels.shared_calendars{% endtrans %}</h3>
-  </div>
-  <div class="panel-body">
-  <ul class="fa-ul">
-  </ul>
+  <div class="block calendar_list dropdown shared_calendars" id="shared_calendar_list">
+    <button class="btn btn-default dropdown-toggle" type="button"
+	    id="shared_calendars_expand" data-toggle="dropdown"
+	    aria-haspopup="true" aria-expanded="false">
+      <span class="panel-title">
+	{% trans %}labels.shared_calendars{% endtrans %}
+      </span>
+      <span class="caret"></span>
+  </button>
+    <ul class="fa-ul dropdown-menu" aria=labelledby="shared_calendars_expand">
+    </ul>
   <div class="buttons">
     <span id="toggle_all_shared_calendars" class="pseudobutton hide_all"
       title="{% trans %}labels.toggleallcalendars{% endtrans %}>"
     ><i class="fa fa-eye-slash fa-lg"></i></span>
   </div>
-  </div><!-- panel-body -->
   </div><!-- panel -->
 
   {% if calendar_subscriptions %}
-  <div class="block calendar_list panel panel-default subscribed_calendars " id="subscribed_calendar_list">
-  <div class="panel-heading">
-    <h3 class="panel-title">{% trans %}labels.subscribed_calendars{% endtrans %}</h3>
-  </div>
-  <div class="panel-body">
-  <ul class="fa-ul">
+  <div class="block calendar_list dropdown subscribed_calendars " id="subscribed_calendar_list">
+    <button class="btn btn-default dropdown-toggle" type="button"
+	    id="subscribed_calendars_expand" data-toggle="dropdown"
+	    aria-haspopup="true" aria-expanded="false">
+      <span class="panel-title">
+	{% trans %}labels.subscribed_calendars{% endtrans %}
+      </span>
+      <span class="caret"></span>
+  </button>
+  <ul class="fa-ul dropdown-menu" aria-labelledby="subscribed_calendars_expand">
   </ul>
   <div class="buttons">
   <i title="{% trans %}labels.subscribe_ical{% endtrans %}" id="calendar_subscribe" class="pseudobutton fa fa-plus"></i>
