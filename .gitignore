@@ -25,6 +25,7 @@ resources/public/assets/dist/css/images/
 resources/public/assets/img/jquery-ui/
 resources/public/assets/font/
 resources/public/assets/fullcalendar-locale/
+/resources/private/assets/templates/templates.js
 public/test-calendar.ics
 
 # Configuration file
@@ -36,3 +37,5 @@ public/test-calendar.ics
 /bower_components/
 /dist/
 .idea
+
+/public/.htaccess
