@@ -1,10 +1,13 @@
 @nodemodules: "../../../../node_modules";
-@bootstrap: "@{nodemodules}/bootstrap/less";
+// @bootstrap: "@{nodemodules}/bootstrap/less";
 @fontawesome: "@{nodemodules}/font-awesome/less";
 
+// @import "bootstrap_variables.less";
+// import "bootstrap.theme.less";
+
+/*
 // Import Bootstrap
 @import "@{bootstrap}/variables.less";
-@import "bootstrap_variables.less";
 @import "@{bootstrap}/mixins.less";
 
 // Reset and dependencies
@@ -41,8 +44,7 @@
 @import "@{bootstrap}/responsive-utilities.less";
 
 // Bootstrap theme
-@import "bootstrap.theme.less";
-
+*/
 
 // Import Font Awesome
 @import "@{fontawesome}/variables.less";
@@ -65,7 +67,7 @@
 
 
 body {
-  background-color: @agendavbgColor;
+  background-color: #FAF9F7;
 }
 
 td.fc-event-container, div.fc-event-container,
@@ -93,16 +95,16 @@ span.username {
 }
 
 #wrapper {
-    .make-row();
+ //   .make-row();
 }
 
 #sidebar {
-  .make-md-column(2);
+  // .make-md-column(2);
   max-width: 200px;
 }
 
 #content {
-  .make-md-column(10);
+//  .make-md-column(10);
 }
 
 #footer {
@@ -302,8 +304,8 @@ div.selecthelper {
 }
 
 .fc-event {
-  font-size: @font-size-base !important;
-  line-height: @line-height-base !important;
+  font-size: 13px !important;
+  line-height: 1.428571429 !important;
 }
 
 span.fc-event-icons {
@@ -338,7 +340,7 @@ i.calendar_color {
   &:hover {
     color: #000;
     cursor: pointer;
-    background-color: @agendavbgHoverPseudobutton !important;
+    background-color: #A9D6FF !important;
   }
 }
 
@@ -377,7 +379,7 @@ span.table_title {
 }
 
 div.preferences-container {
-  .make-md-column(7);
+  // .make-md-column(7);
 }
 
 .nav-tabs {
@@ -385,11 +387,11 @@ div.preferences-container {
 }
 
 a.remove, button.remove {
-  color: @brand-danger;
+    color: red;
 }
 
 div.actions {
-  border-top: 1px solid @gray-lighter;
+  border-top: 1px solid gray;
   padding-top: 10px;
   margin-top: 10px;
   display: flex;
